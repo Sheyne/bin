@@ -1,0 +1,11 @@
+#! /bin/bash
+
+# Compile And Run
+
+gcc "$1" -o /tmp/candrun.out
+if [ "$?" -ne "0" ]
+then
+exit 1
+fi
+/tmp/candrun.out
+rm /tmp/candrun.out

@@ -1,0 +1,6 @@
+#! /bin/bash
+
+git commit -am "$@"
+git ftp push
+
+

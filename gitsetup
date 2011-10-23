@@ -1,0 +1,11 @@
+#! /bin/bash
+git config –global user.name "Sheyne"
+git config –global user.email me@sheyne.com
+mkdir ~/Dev/$1
+cd ~/Dev/$1
+git init
+touch README
+git add README
+git commit -m “First Commit”
+git remote add origin git@github.com:$1/$1.git
+git push origin master
