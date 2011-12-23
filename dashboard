@@ -1,0 +1,11 @@
+#! /bin/bash
+
+dashboard_off(){
+	defaults write com.apple.dashboard mcx-disabled -boolean $1 ; killall Dock
+}
+
+if [[ $1 == "on" || $1 == "o" || $1 == "1" || $1 == "activate" || $1 == "enable" ]] ; then
+	dashboard_off "NO"
+else
+	dashboard_off "YES"
+fi
