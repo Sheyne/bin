@@ -1,0 +1,4 @@
+#! /bin/bash
+sudo net-socks-wifi on
+ssh -D 8325 $@
+sudo net-socks-wifi off

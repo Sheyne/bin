@@ -1,0 +1,2 @@
+#! /bin/bash
+networksetup -setsocksfirewallproxystate Wi-Fi $1
